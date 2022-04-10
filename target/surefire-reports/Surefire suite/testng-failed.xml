@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test name="Surefire test(failed)">
+    <classes>
+      <class name="Target.TestTargetDetailPage">
+        <methods>
+          <include name="testDisplayDetailItem"/>
+          <include name="testNotDetailFoundItem"/>
+        </methods>
+      </class> <!-- Target.TestTargetDetailPage -->
+      <class name="Target.TestTargetPasswordRecoveryPage">
+        <methods>
+          <include name="testFakePasswordRecovery"/>
+          <include name="testPasswordRecovery"/>
+        </methods>
+      </class> <!-- Target.TestTargetPasswordRecoveryPage -->
+      <class name="Target.TestFindMyStore">
+        <methods>
+          <include name="smokeTestFilterStore"/>
+        </methods>
+      </class> <!-- Target.TestFindMyStore -->
+      <class name="Target.TestTargetCategories">
+        <methods>
+          <include name="regressionDeliveryFilters"/>
+          <include name="regressionClothesFilters"/>
+        </methods>
+      </class> <!-- Target.TestTargetCategories -->
+      <class name="Target.TestTargetPage">
+        <methods>
+          <include name="regressionUseLocation"/>
+        </methods>
+      </class> <!-- Target.TestTargetPage -->
+      <class name="Target.TestTargetMenuNav">
+        <methods>
+          <include name="regressionWhatsNewNav"/>
+        </methods>
+      </class> <!-- Target.TestTargetMenuNav -->
+      <class name="Target.TestTargetFavoritePage">
+        <methods>
+          <include name="testFavoriteSaveRemove"/>
+          <include name="testFavoriteSaveDisplay"/>
+          <include name="testFavoriteSaveRemoveDisplay"/>
+          <include name="testFavoriteSave"/>
+        </methods>
+      </class> <!-- Target.TestTargetFavoritePage -->
+      <class name="Target.TestTargetLogin">
+        <methods>
+          <include name="testFakeUserLogin"/>
+          <include name="testLogin"/>
+          <include name="createAccountWithUsedEmail"/>
+        </methods>
+      </class> <!-- Target.TestTargetLogin -->
+      <class name="Target.TestTargetSearchPage">
+        <methods>
+          <include name="testDisplayCategory"/>
+          <include name="testSearchItem"/>
+          <include name="testCategoryNotFound"/>
+          <include name="testSupportTypoItem"/>
+          <include name="testSearchCategory"/>
+        </methods>
+      </class> <!-- Target.TestTargetSearchPage -->
+      <class name="Target.TestTargetShoppingCart">
+        <methods>
+          <include name="addItemToCart"/>
+          <include name="deleteItemfromCart"/>
+        </methods>
+      </class> <!-- Target.TestTargetShoppingCart -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

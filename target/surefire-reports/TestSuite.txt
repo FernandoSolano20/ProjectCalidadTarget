@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 67, Failures: 1, Errors: 0, Skipped: 66, Time elapsed: 0.642 sec <<< FAILURE! - in TestSuite
+TestSetUp(Target.TestFindMyStore)  Time elapsed: 0.353 sec  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'Browser' is required by @Configuration on method TestSetUp but has not been marked @Optional or defined
+
+

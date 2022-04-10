@@ -3,17 +3,17 @@
 <suite name="Suite">
     <parameter name="Browser" value="Chrome" />
     <parameter name="URL" value="https://www.target.com/"/>
-   <!-- <test name="PasswordRecovery">
+    <!-- <test name="PasswordRecovery">
         <classes>
             <class name="Target.TestTargetPasswordRecoveryPage"/>
         </classes>
-    </test>
+    </test>-->
     <test name="Login">
         <classes>
             <class name="Target.TestTargetLogin"/>
         </classes>
     </test>
-    <test name="DetailPage">
+    <!--<test name="DetailPage">
         <classes>
             <class name="Target.TestTargetDetailPage"/>
         </classes>
@@ -47,13 +47,13 @@
         <classes>
             <class name="Target.TestTargetMenuNav"/>
         </classes>
-    </test>-->
+    </test>
     <test name="SearchPage">
         <classes>
             <class name="Target.TestTargetSearchPage"/>
         </classes>
     </test>
-   <!-- <test name="Address">
+   <test name="Address">
         <classes>
             <class name="Target.TestTargetUserAddress"/>
         </classes>
