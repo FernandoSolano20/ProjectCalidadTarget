@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <parameter name="Browser" value="Chrome" />
+    <parameter name="URL" value="https://www.target.com/"/>
+   <!-- <test name="PasswordRecovery">
+        <classes>
+            <class name="Target.TestTargetPasswordRecoveryPage"/>
+        </classes>
+    </test>
+    <test name="Login">
+        <classes>
+            <class name="Target.TestTargetLogin"/>
+        </classes>
+    </test>
+    <test name="DetailPage">
+        <classes>
+            <class name="Target.TestTargetDetailPage"/>
+        </classes>
+    </test>
+    <test name="FavoritesPage">
+        <classes>
+            <class name="Target.TestTargetFavoritePage"/>
+        </classes>
+    </test>
+    <test name="Home">
+        <classes>
+            <class name="Target.TestTargetPage"/>
+        </classes>
+    </test>
+    <test name="FindStore">
+        <classes>
+            <class name="Target.TestFindMyStore"/>
+        </classes>
+    </test>
+    <test name="ShoppingCard">
+        <classes>
+            <class name="Target.TestTargetShoppingCart"/>
+        </classes>
+    </test>
+    <test name="Categories">
+        <classes>
+            <class name="Target.TestTargetCategories"/>
+        </classes>
+    </test>
+    <test name="Navigation">
+        <classes>
+            <class name="Target.TestTargetMenuNav"/>
+        </classes>
+    </test>-->
+    <test name="SearchPage">
+        <classes>
+            <class name="Target.TestTargetSearchPage"/>
+        </classes>
+    </test>
+   <!-- <test name="Address">
+        <classes>
+            <class name="Target.TestTargetUserAddress"/>
+        </classes>
+    </test> -->
+
+</suite>

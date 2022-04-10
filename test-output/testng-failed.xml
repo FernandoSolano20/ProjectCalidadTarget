@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="URL" value="https://www.target.com/"/>
+  <parameter name="Browser" value="Chrome"/>
+  <test name="FavoritesPage(failed)">
+    <classes>
+      <class name="Target.TestTargetMenuNav">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetMenuNav -->
+      <class name="Target.TestFindMyStore">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestFindMyStore -->
+      <class name="Target.TestTargetCategories">
+        <methods>
+          <include name="methodLevelSetUp"/>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetCategories -->
+      <class name="Target.TestTargetDetailPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetDetailPage -->
+      <class name="Target.TestTargetPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="resetTest"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetPage -->
+      <class name="Target.TestTargetLogin">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetLogin -->
+      <class name="Target.TestTargetPasswordRecoveryPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetPasswordRecoveryPage -->
+      <class name="Target.TestTargetShoppingCart">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetShoppingCart -->
+      <class name="Target.TestTargetFavoritePage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="testFavoriteSaveRemoveDisplay"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetFavoritePage -->
+      <class name="Target.TestTargetSearchPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetSearchPage -->
+    </classes>
+  </test> <!-- FavoritesPage(failed) -->
+  <test name="ShoppingCard(failed)">
+    <classes>
+      <class name="Target.TestTargetMenuNav">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetMenuNav -->
+      <class name="Target.TestFindMyStore">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestFindMyStore -->
+      <class name="Target.TestTargetCategories">
+        <methods>
+          <include name="methodLevelSetUp"/>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetCategories -->
+      <class name="Target.TestTargetDetailPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetDetailPage -->
+      <class name="Target.TestTargetPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="resetTest"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetPage -->
+      <class name="Target.TestTargetShoppingCart">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="addItemToCart"/>
+          <include name="teardown"/>
+          <include name="deleteItemfromCart"/>
+        </methods>
+      </class> <!-- Target.TestTargetShoppingCart -->
+      <class name="Target.TestTargetLogin">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetLogin -->
+      <class name="Target.TestTargetPasswordRecoveryPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetPasswordRecoveryPage -->
+      <class name="Target.TestTargetFavoritePage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetFavoritePage -->
+      <class name="Target.TestTargetSearchPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetSearchPage -->
+    </classes>
+  </test> <!-- ShoppingCard(failed) -->
+  <test name="Categories(failed)">
+    <classes>
+      <class name="Target.TestTargetMenuNav">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetMenuNav -->
+      <class name="Target.TestFindMyStore">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestFindMyStore -->
+      <class name="Target.TestTargetCategories">
+        <methods>
+          <include name="methodLevelSetUp"/>
+          <include name="TestSetUp"/>
+          <include name="regressionDeliveryFilters"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetCategories -->
+      <class name="Target.TestTargetDetailPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetDetailPage -->
+      <class name="Target.TestTargetPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="resetTest"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetPage -->
+      <class name="Target.TestTargetLogin">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetLogin -->
+      <class name="Target.TestTargetPasswordRecoveryPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetPasswordRecoveryPage -->
+      <class name="Target.TestTargetShoppingCart">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetShoppingCart -->
+      <class name="Target.TestTargetFavoritePage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetFavoritePage -->
+      <class name="Target.TestTargetSearchPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetSearchPage -->
+    </classes>
+  </test> <!-- Categories(failed) -->
+  <test name="Navigation(failed)">
+    <classes>
+      <class name="Target.TestTargetMenuNav">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="regressionWhatsNewNav"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetMenuNav -->
+      <class name="Target.TestFindMyStore">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestFindMyStore -->
+      <class name="Target.TestTargetCategories">
+        <methods>
+          <include name="methodLevelSetUp"/>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetCategories -->
+      <class name="Target.TestTargetDetailPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetDetailPage -->
+      <class name="Target.TestTargetPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="resetTest"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetPage -->
+      <class name="Target.TestTargetLogin">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetLogin -->
+      <class name="Target.TestTargetPasswordRecoveryPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetPasswordRecoveryPage -->
+      <class name="Target.TestTargetShoppingCart">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetShoppingCart -->
+      <class name="Target.TestTargetFavoritePage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetFavoritePage -->
+      <class name="Target.TestTargetSearchPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetSearchPage -->
+    </classes>
+  </test> <!-- Navigation(failed) -->
+  <test name="SearchPage(failed)">
+    <classes>
+      <class name="Target.TestTargetMenuNav">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetMenuNav -->
+      <class name="Target.TestFindMyStore">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestFindMyStore -->
+      <class name="Target.TestTargetCategories">
+        <methods>
+          <include name="methodLevelSetUp"/>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetCategories -->
+      <class name="Target.TestTargetDetailPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetDetailPage -->
+      <class name="Target.TestTargetPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="resetTest"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetPage -->
+      <class name="Target.TestTargetLogin">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetLogin -->
+      <class name="Target.TestTargetPasswordRecoveryPage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetPasswordRecoveryPage -->
+      <class name="Target.TestTargetShoppingCart">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetShoppingCart -->
+      <class name="Target.TestTargetSearchPage">
+        <methods>
+          <include name="testDisplayCategory"/>
+          <include name="TestSetUp"/>
+          <include name="teardown"/>
+          <include name="methodLevelSetUp"/>
+        </methods>
+      </class> <!-- Target.TestTargetSearchPage -->
+      <class name="Target.TestTargetFavoritePage">
+        <methods>
+          <include name="TestSetUp"/>
+          <include name="methodLevelSetUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Target.TestTargetFavoritePage -->
+    </classes>
+  </test> <!-- SearchPage(failed) -->
+</suite> <!-- Failed suite [Suite] -->

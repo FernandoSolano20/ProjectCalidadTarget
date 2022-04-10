@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\dsolano\Desktop\Ucenfotec\QA\proyecto_qa\testSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">10 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">29 methods, 6 failed,   23 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetShoppingCart" hash-for-method="addItemToCart">addItemToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetShoppingCart" hash-for-method="deleteItemfromCart">deleteItemfromCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetCategories" hash-for-method="regressionDeliveryFilters">regressionDeliveryFilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetMenuNav" hash-for-method="regressionWhatsNewNav">regressionWhatsNewNav</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetSearchPage" hash-for-method="testDisplayCategory">testDisplayCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetFavoritePage" hash-for-method="testFavoriteSaveRemoveDisplay">testFavoriteSaveRemoveDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetLogin" hash-for-method="createAccountWithUsedEmail">createAccountWithUsedEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPage" hash-for-method="invalidZipCode">invalidZipCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPage" hash-for-method="logoNavTest">logoNavTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPage" hash-for-method="logoNavTestOnHome">logoNavTestOnHome</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetCategories" hash-for-method="regressionClothesFilters">regressionClothesFilters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetMenuNav" hash-for-method="regressionDealsNav">regressionDealsNav</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPage" hash-for-method="regressionSearchStores">regressionSearchStores</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPage" hash-for-method="regressionUseLocation">regressionUseLocation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPage" hash-for-method="searchLocationByValidZip">searchLocationByValidZip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestFindMyStore" hash-for-method="smokeTestFilterStore">smokeTestFilterStore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetSearchPage" hash-for-method="testCategoryNotFound">testCategoryNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetDetailPage" hash-for-method="testDisplayDetailItem">testDisplayDetailItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPasswordRecoveryPage" hash-for-method="testFakePasswordRecovery">testFakePasswordRecovery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetLogin" hash-for-method="testFakeUserLogin">testFakeUserLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetFavoritePage" hash-for-method="testFavoriteSave">testFavoriteSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetFavoritePage" hash-for-method="testFavoriteSaveDisplay">testFavoriteSaveDisplay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetFavoritePage" hash-for-method="testFavoriteSaveRemove">testFavoriteSaveRemove</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetLogin" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetDetailPage" hash-for-method="testNotDetailFoundItem">testNotDetailFoundItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetPasswordRecoveryPage" hash-for-method="testPasswordRecovery">testPasswordRecovery</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetSearchPage" hash-for-method="testSearchCategory">testSearchCategory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetSearchPage" hash-for-method="testSearchItem">testSearchItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Target.TestTargetSearchPage" hash-for-method="testSupportTypoItem">testSupportTypoItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Target.TestTargetMenuNav</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="regressionWhatsNewNav">
+                  </a> <!-- regressionWhatsNewNav -->
+                  <span class="method-name">regressionWhatsNewNav</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Target.TestTargetMenuNav.regressionWhatsNewNav(TestTargetMenuNav.java:55)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Target.TestTargetCategories</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="regressionDeliveryFilters">
+                  </a> <!-- regressionDeliveryFilters -->
+                  <span class="method-name">regressionDeliveryFilters</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@for=&apos;Check me!&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SOLANOD&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\dsolano\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51192}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 083489ada9960c9b1122b366398b17e4
+*** Element info: {Using=xpath, value=//*[@for=&apos;Check me!&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Target.BasePage.scrollTo(BasePage.java:23)
+	at Target.TargetCategories.clickFilter(TargetCategories.java:14)
+	at Target.TestTargetCategories.regressionDeliveryFilters(TestTargetCategories.java:41)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Target.TestTargetShoppingCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemToCart">
+                  </a> <!-- addItemToCart -->
+                  <span class="method-name">addItemToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#account&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SOLANOD&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\dsolano\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cc89a0243df8ba896c41e297c421ab6
+*** Element info: {Using=id, value=account}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Target.BasePage.click(BasePage.java:19)
+	at Target.TargetLoginPage.navigate(TargetLoginPage.java:25)
+	at Target.TargetLoginPage.login(TargetLoginPage.java:45)
+	at Target.TestTargetShoppingCart.addItemToCart(TestTargetShoppingCart.java:26)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteItemfromCart">
+                  </a> <!-- deleteItemfromCart -->
+                  <span class="method-name">deleteItemfromCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-test=&apos;cartItem-deleteBtn&apos;]&quot;}
+  (Session info: chrome=89.0.4389.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;SOLANOD&apos;, ip: &apos;192.168.0.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\dsolano\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:51020}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8cc89a0243df8ba896c41e297c421ab6
+*** Element info: {Using=xpath, value=//*[@data-test=&apos;cartItem-deleteBtn&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Target.BasePage.click(BasePage.java:19)
+	at Target.TargetShoppingCart.deleteItemFromCart(TargetShoppingCart.java:28)
+	at Target.TestTargetShoppingCart.deleteItemfromCart(TestTargetShoppingCart.java:37)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Target.TestTargetFavoritePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFavoriteSaveRemoveDisplay">
+                  </a> <!-- testFavoriteSaveRemoveDisplay -->
+                  <span class="method-name">testFavoriteSaveRemoveDisplay</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 2, Size: 2
+	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+	at java.util.ArrayList.get(ArrayList.java:435)
+	at Target.TargetFavoritePage.noFavoritesSaved(TargetFavoritePage.java:30)
+	at Target.TestTargetFavoritePage.testFavoriteSaveRemoveDisplay(TestTargetFavoritePage.java:49)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Target.TestTargetSearchPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDisplayCategory">
+                  </a> <!-- testDisplayCategory -->
+                  <span class="method-name">testDisplayCategory</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at Target.TestTargetSearchPage.testDisplayCategory(TestTargetSearchPage.java:20)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetMenuNav</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="regressionDealsNav">
+                  </a> <!-- regressionDealsNav -->
+                  <span class="method-name">regressionDealsNav</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestFindMyStore</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="smokeTestFilterStore">
+                  </a> <!-- smokeTestFilterStore -->
+                  <span class="method-name">smokeTestFilterStore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetCategories</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="regressionClothesFilters">
+                  </a> <!-- regressionClothesFilters -->
+                  <span class="method-name">regressionClothesFilters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetDetailPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDisplayDetailItem">
+                  </a> <!-- testDisplayDetailItem -->
+                  <span class="method-name">testDisplayDetailItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNotDetailFoundItem">
+                  </a> <!-- testNotDetailFoundItem -->
+                  <span class="method-name">testNotDetailFoundItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidZipCode">
+                  </a> <!-- invalidZipCode -->
+                  <span class="method-name">invalidZipCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoNavTest">
+                  </a> <!-- logoNavTest -->
+                  <span class="method-name">logoNavTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoNavTestOnHome">
+                  </a> <!-- logoNavTestOnHome -->
+                  <span class="method-name">logoNavTestOnHome</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="regressionSearchStores">
+                  </a> <!-- regressionSearchStores -->
+                  <span class="method-name">regressionSearchStores</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="regressionUseLocation">
+                  </a> <!-- regressionUseLocation -->
+                  <span class="method-name">regressionUseLocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchLocationByValidZip">
+                  </a> <!-- searchLocationByValidZip -->
+                  <span class="method-name">searchLocationByValidZip</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetPasswordRecoveryPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFakePasswordRecovery">
+                  </a> <!-- testFakePasswordRecovery -->
+                  <span class="method-name">testFakePasswordRecovery</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPasswordRecovery">
+                  </a> <!-- testPasswordRecovery -->
+                  <span class="method-name">testPasswordRecovery</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountWithUsedEmail">
+                  </a> <!-- createAccountWithUsedEmail -->
+                  <span class="method-name">createAccountWithUsedEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFakeUserLogin">
+                  </a> <!-- testFakeUserLogin -->
+                  <span class="method-name">testFakeUserLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetFavoritePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFavoriteSave">
+                  </a> <!-- testFavoriteSave -->
+                  <span class="method-name">testFavoriteSave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFavoriteSaveDisplay">
+                  </a> <!-- testFavoriteSaveDisplay -->
+                  <span class="method-name">testFavoriteSaveDisplay</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFavoriteSaveRemove">
+                  </a> <!-- testFavoriteSaveRemove -->
+                  <span class="method-name">testFavoriteSaveRemove</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Target.TestTargetSearchPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCategoryNotFound">
+                  </a> <!-- testCategoryNotFound -->
+                  <span class="method-name">testCategoryNotFound</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchCategory">
+                  </a> <!-- testSearchCategory -->
+                  <span class="method-name">testSearchCategory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSearchItem">
+                  </a> <!-- testSearchItem -->
+                  <span class="method-name">testSearchItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSupportTypoItem">
+                  </a> <!-- testSupportTypoItem -->
+                  <span class="method-name">testSupportTypoItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\dsolano\Desktop\Ucenfotec\QA\proyecto_qa\testSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;parameter name=&quot;URL&quot; value=&quot;https://www.target.com/&quot;/&gt;
+  &lt;parameter name=&quot;Browser&quot; value=&quot;Chrome&quot;/&gt;
+  &lt;test name=&quot;PasswordRecovery&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetPasswordRecoveryPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PasswordRecovery --&gt;
+  &lt;test name=&quot;Login&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetLogin&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test name=&quot;DetailPage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetDetailPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- DetailPage --&gt;
+  &lt;test name=&quot;FavoritesPage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetFavoritePage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FavoritesPage --&gt;
+  &lt;test name=&quot;Home&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Home --&gt;
+  &lt;test name=&quot;FindStore&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestFindMyStore&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FindStore --&gt;
+  &lt;test name=&quot;ShoppingCard&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetShoppingCart&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ShoppingCard --&gt;
+  &lt;test name=&quot;Categories&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetCategories&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Categories --&gt;
+  &lt;test name=&quot;Navigation&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetMenuNav&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Navigation --&gt;
+  &lt;test name=&quot;SearchPage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Target.TestTargetSearchPage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SearchPage --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">PasswordRecovery (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">DetailPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FavoritesPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Home (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">FindStore (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ShoppingCard (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Categories (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Navigation (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SearchPage (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(29);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'Target.TestTargetLogin')
+data.setCell(0, 3, 87801);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testFavoriteSave')
+data.setCell(1, 2, 'Target.TestTargetFavoritePage')
+data.setCell(1, 3, 46090);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'regressionClothesFilters')
+data.setCell(2, 2, 'Target.TestTargetCategories')
+data.setCell(2, 3, 32879);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testFavoriteSaveRemove')
+data.setCell(3, 2, 'Target.TestTargetFavoritePage')
+data.setCell(3, 3, 30546);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testDisplayDetailItem')
+data.setCell(4, 2, 'Target.TestTargetDetailPage')
+data.setCell(4, 3, 27466);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'regressionDeliveryFilters')
+data.setCell(5, 2, 'Target.TestTargetCategories')
+data.setCell(5, 3, 24742);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'addItemToCart')
+data.setCell(6, 2, 'Target.TestTargetShoppingCart')
+data.setCell(6, 3, 21001);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'deleteItemfromCart')
+data.setCell(7, 2, 'Target.TestTargetShoppingCart')
+data.setCell(7, 3, 18934);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'regressionDealsNav')
+data.setCell(8, 2, 'Target.TestTargetMenuNav')
+data.setCell(8, 3, 14093);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'smokeTestFilterStore')
+data.setCell(9, 2, 'Target.TestFindMyStore')
+data.setCell(9, 3, 14005);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'regressionSearchStores')
+data.setCell(10, 2, 'Target.TestTargetPage')
+data.setCell(10, 3, 11760);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createAccountWithUsedEmail')
+data.setCell(11, 2, 'Target.TestTargetLogin')
+data.setCell(11, 3, 11344);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testPasswordRecovery')
+data.setCell(12, 2, 'Target.TestTargetPasswordRecoveryPage')
+data.setCell(12, 3, 11342);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testFavoriteSaveDisplay')
+data.setCell(13, 2, 'Target.TestTargetFavoritePage')
+data.setCell(13, 3, 11310);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testSupportTypoItem')
+data.setCell(14, 2, 'Target.TestTargetSearchPage')
+data.setCell(14, 3, 11116);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testDisplayCategory')
+data.setCell(15, 2, 'Target.TestTargetSearchPage')
+data.setCell(15, 3, 10292);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testFavoriteSaveRemoveDisplay')
+data.setCell(16, 2, 'Target.TestTargetFavoritePage')
+data.setCell(16, 3, 9260);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testFakePasswordRecovery')
+data.setCell(17, 2, 'Target.TestTargetPasswordRecoveryPage')
+data.setCell(17, 3, 9161);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testSearchCategory')
+data.setCell(18, 2, 'Target.TestTargetSearchPage')
+data.setCell(18, 3, 7730);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testFakeUserLogin')
+data.setCell(19, 2, 'Target.TestTargetLogin')
+data.setCell(19, 3, 7415);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testSearchItem')
+data.setCell(20, 2, 'Target.TestTargetSearchPage')
+data.setCell(20, 3, 6281);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testNotDetailFoundItem')
+data.setCell(21, 2, 'Target.TestTargetDetailPage')
+data.setCell(21, 3, 6272);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'regressionWhatsNewNav')
+data.setCell(22, 2, 'Target.TestTargetMenuNav')
+data.setCell(22, 3, 6185);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'logoNavTest')
+data.setCell(23, 2, 'Target.TestTargetPage')
+data.setCell(23, 3, 5835);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'searchLocationByValidZip')
+data.setCell(24, 2, 'Target.TestTargetPage')
+data.setCell(24, 3, 3438);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'invalidZipCode')
+data.setCell(25, 2, 'Target.TestTargetPage')
+data.setCell(25, 3, 3394);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testCategoryNotFound')
+data.setCell(26, 2, 'Target.TestTargetSearchPage')
+data.setCell(26, 3, 3299);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'regressionUseLocation')
+data.setCell(27, 2, 'Target.TestTargetPage')
+data.setCell(27, 3, 2320);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'logoNavTestOnHome')
+data.setCell(28, 2, 'Target.TestTargetPage')
+data.setCell(28, 3, 1997);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 7 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetPasswordRecoveryPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">15600 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFakePasswordRecovery</span>
+                <span class="method-start">15606 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">24768 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testPasswordRecovery</span>
+                <span class="method-start">24768 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">36110 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetLogin</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">36802 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">70169 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccountWithUsedEmail</span>
+                <span class="method-start">72443 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">83788 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFakeUserLogin</span>
+                <span class="method-start">84641 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">92057 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">94843 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">182644 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetDetailPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">183294 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">199785 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDisplayDetailItem</span>
+                <span class="method-start">199792 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">227258 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testNotDetailFoundItem</span>
+                <span class="method-start">227258 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">233530 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetFavoritePage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">234204 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">241012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFavoriteSave</span>
+                <span class="method-start">241017 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">287107 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFavoriteSaveDisplay</span>
+                <span class="method-start">287107 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">298417 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testFavoriteSaveRemove</span>
+                <span class="method-start">298417 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">328963 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testFavoriteSaveRemoveDisplay</span>
+                <span class="method-start">328963 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">338228 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">338900 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">346027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidZipCode</span>
+                <span class="method-start">346029 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetTest</span>
+                <span class="method-start">349423 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">logoNavTest</span>
+                <span class="method-start">350381 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">350381 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">resetTest</span>
+                <span class="method-start">356217 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">logoNavTestOnHome</span>
+                <span class="method-start">357572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">357572 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">resetTest</span>
+                <span class="method-start">359570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">360354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">regressionSearchStores</span>
+                <span class="method-start">360354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetTest</span>
+                <span class="method-start">372114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">372851 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">regressionUseLocation</span>
+                <span class="method-start">372851 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetTest</span>
+                <span class="method-start">375171 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">375949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchLocationByValidZip</span>
+                <span class="method-start">375949 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">resetTest</span>
+                <span class="method-start">379387 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">380128 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestFindMyStore</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">380797 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">387290 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">smokeTestFilterStore</span>
+                <span class="method-start">388033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">402038 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetShoppingCart</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">402720 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">409734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addItemToCart</span>
+                <span class="method-start">409736 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">deleteItemfromCart</span>
+                <span class="method-start">430738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">430738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">449673 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetCategories</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">450334 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">458101 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">regressionClothesFilters</span>
+                <span class="method-start">459639 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">492518 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">regressionDeliveryFilters</span>
+                <span class="method-start">493321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">518064 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetMenuNav</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">518754 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">526041 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">regressionDealsNav</span>
+                <span class="method-start">527088 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">541182 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">regressionWhatsNewNav</span>
+                <span class="method-start">541806 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">547991 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Target.TestTargetSearchPage</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">TestSetUp(Chrome, https://www.target.com/)</span>
+                <span class="method-start">548691 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">555672 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCategoryNotFound</span>
+                <span class="method-start">555672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">558972 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDisplayCategory</span>
+                <span class="method-start">558972 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">569264 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchCategory</span>
+                <span class="method-start">569264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">576994 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSearchItem</span>
+                <span class="method-start">576994 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">methodLevelSetUp</span>
+                <span class="method-start">583275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testSupportTypoItem</span>
+                <span class="method-start">583275 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">594391 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
