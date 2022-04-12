@@ -55,14 +55,14 @@ public class TestTargetPage extends BaseTest{
     public void invalidZipCode() throws InterruptedException
     {
         THP.searchLocation("00000000000");
-        By errorBox = By.xpath("//*[@data-test='storeIdSearch-error']//h2");
+        By errorBox = By.id("zip-or-city-state--ErrorMessage");
         String errorMessage = driver.findElement(errorBox).getText();
-        Assert.assertEquals(errorMessage.toLowerCase(), "sorry, something went wrong.");
+        Assert.assertEquals(errorMessage.toLowerCase(), "please enter a valid location");
     }
     @Test
     public void searchLocationByValidZip() throws InterruptedException
     {
-        By item = By.xpath("//*[@data-test='storeIdSearch-item-2083']//h3");
+        By item = By.cssSelector("[data-test=\"@web/StoreSearchBlockContainer/StoresList-2083\"] h4");
         THP.searchLocation("85364");
         String itemTitle = driver.findElement(item).getText();
         Assert.assertEquals(itemTitle.toLowerCase(), "yuma");
@@ -70,42 +70,40 @@ public class TestTargetPage extends BaseTest{
 
     @Test
     public void regressionSearchStores()  throws InterruptedException {
-        By selectedStore = By.xpath("//*[@data-test='storeId-store-name']");
+        By selectedStore = By.cssSelector("[data-test=\"@web/StoreMessage/StoreName\"] .styles__StyledMessage-sc-1ghv6mc-5");
         String firstStore;
         //By ZipCode
         THP.searchLocation("60191");
-        firstStore = getElementText("//*[@data-test='storeIdSearch-item-893']", "h3");
+        firstStore = getElementText("//*[@data-test='@web/StoreSearchBlockContainer/StoresList-893']", "h4");
         Assert.assertEquals(firstStore, "Wood Dale");
-        THP.resetMenu();
+        By close =  By.className("styles__IconButtonStyles-sc-1ymnlhk-0");
+        THP.click(close);
+
         //By State
-        THP.searchLocation("New York");
-        firstStore = getElementText("//*[@data-test='storeIdSearch-item-3229']", "h3");
-        Assert.assertEquals(firstStore, "Tribeca");
-        THP.resetMenu();
-        //By city
-        THP.searchLocation("Albany");
-        firstStore = getElementText("//*[@data-test='storeIdSearch-item-1796']", "h3");
-        Assert.assertEquals(firstStore, "East Greenbush");
+        THP.searchLocation("Austin, Texas");
+        firstStore = getElementText("//*[@data-test='@web/StoreSearchBlockContainer/StoresList-1908']", "h4");
+        Assert.assertEquals(firstStore, "Katy Cinco Ranch");
+
         //CheckDetails
         THP.clickDetails();
         Thread.sleep(500);
-        By hours = By.xpath("//*[@data-test='chooseStoreModal-storeDetails-storeInformationDayHours']");
+        By hours = By.cssSelector("[data-test=\"@web/StoreDetails/Hours\"]");
         List<WebElement> details = driver.findElements(hours);
         Assert.assertTrue(!details.isEmpty());
         THP.closeDetails();
         Thread.sleep(500);
         THP.selectStore();
         firstStore = driver.findElement(selectedStore).getText();
-        Assert.assertEquals(firstStore, "East Greenbush");
+        Assert.assertEquals(firstStore, "Katy Cinco Ranch");
 
     }
 
     @Test
     public void regressionUseLocation()  throws InterruptedException {
-        By errorMessage = By.xpath("//*[contains(@class,'h-text-orangeDark')]");
+        By errorMessage = By.cssSelector(".h-text-orangeDark");
         THP.useLocation();
         String message = driver.findElement(errorMessage).getText();
-        Assert.assertTrue(message.contains("Could not find your location."));
+        Assert.assertTrue(message.contains("We are unable to retrieve your location. Please try again later."));
 
     }
 
