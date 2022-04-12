@@ -18,7 +18,7 @@ public class TargetUserAddress extends BasePage{
     By phoneInput = By.id("phone_number");
     By addressCheckbox = By.id("default_address");
     By saveButton = By.xpath("//*[@type='submit']");
-    By saveAddress = By.xpath("//*[@type='button']");
+    By saveAddress = By.cssSelector("[data-test=\"content-wrapper\"] .BaseButton-sc-3v3oog-0.VBXLQ");
     By textBox = By.xpath("//*[@data-test='address-card']");
 
 
@@ -45,7 +45,7 @@ public class TargetUserAddress extends BasePage{
         sendKeys(phoneInput, phone);
         super.driver.findElements(saveButton).get(1).click();
         Thread.sleep(5000);
-        super.driver.findElements(saveAddress).get(11).click();
+        click(saveAddress);
         Thread.sleep(5000);
     }
 

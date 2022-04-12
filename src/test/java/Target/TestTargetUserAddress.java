@@ -20,13 +20,13 @@ public class TestTargetUserAddress extends BaseTest {
 
     @Test
     public void addNewAddress()throws InterruptedException {
-        TLP.login("cobandol@ucenfotec.ac.cr", "Welcome!!");
+        TLP.login("testFernando@gmail.com", "Pass1234");
         Thread.sleep(1000);
         driver.get("https://www.target.com/account/addresses");
-        String result = TUA.createNewAddress("Adrian", "Obando", "Test123", "90011", "Los Angeles",
+        String result = TUA.createNewAddress("Fernando", "Solano", "Test123", "90011", "Los Angeles",
                 "California" , "3125551212");
         Thread.sleep(5000);
-        Assert.assertTrue(result.contains("Adrian"));
+        Assert.assertTrue(result.contains("Fernando"));
 
     }
 }
