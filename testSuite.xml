@@ -17,18 +17,18 @@
         <classes>
             <class name="Target.TestTargetDetailPage"/>
         </classes>
-    </test>-->
+    </test>
     <test name="FavoritesPage">
         <classes>
             <class name="Target.TestTargetFavoritePage"/>
         </classes>
-    </test>
-    <!--<test name="Home">
+    </test>-->
+    <test name="Home">
         <classes>
             <class name="Target.TestTargetPage"/>
         </classes>
     </test>
-    <test name="FindStore">
+    <!--<test name="FindStore">
         <classes>
             <class name="Target.TestFindMyStore"/>
         </classes>

@@ -22,7 +22,7 @@ public class TestTargetFavoritePage extends BaseTest{
 
     @Test
     public void testFavoriteSave() throws InterruptedException {
-        TLP.login("jsolanom@ucenfotec.ac.cr", "testU123");
+        TLP.login("testFernando@gmail.com", "Pass1234");
         TDP.goToPage("https://www.target.com/s?searchTerm=shampoo");
         TDP.getDetailElement();
         this.SavedItem = TDP.FavoriteItem;

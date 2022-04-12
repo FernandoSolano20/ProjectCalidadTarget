@@ -9,7 +9,7 @@ public class TargetFavoritePage extends BasePage{
         super(driver);
     }
 
-    By FavoriteBtn = By.xpath("//button[@data-test='crushButton']");
+    By FavoriteBtn = By.cssSelector(".styles__SvgWrapper-sc-19se466-1 .sc-hKFxyN");
     By FavoriteSave = By.xpath("//a[@data-test='product-title']");
     By FavoriteTxt = By.className("Heading__StyledHeading-sc-1mp23s9-0");
 
