@@ -37,13 +37,13 @@
         <classes>
             <class name="Target.TestTargetShoppingCart"/>
         </classes>
-    </test>-->
+    </test>
     <test name="Categories">
         <classes>
             <class name="Target.TestTargetCategories"/>
         </classes>
     </test>
-    <!--<test name="Navigation">
+    <test name="Navigation">
         <classes>
             <class name="Target.TestTargetMenuNav"/>
         </classes>
@@ -52,11 +52,11 @@
         <classes>
             <class name="Target.TestTargetSearchPage"/>
         </classes>
-    </test>
-   <test name="Address">
-        <classes>
-            <class name="Target.TestTargetUserAddress"/>
-        </classes>
-    </test> -->
+    </test>-->
+    <test name="Address">
+         <classes>
+             <class name="Target.TestTargetUserAddress"/>
+         </classes>
+     </test>
 
 </suite>

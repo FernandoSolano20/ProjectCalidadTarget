@@ -17,19 +17,16 @@ public class TestTargetMenuNav extends BaseTest{
 
     @Test
     public void regressionDealsNav() throws InterruptedException  {
-        String menu= "secondary";
-        String clearance = "deals-clearance";
-        String weeklyAd = "deals-weeklyAd";
-        String topDeals = "deals-topDeals";
-        String redCardE = "deals-redcardExclusives";
-        String targetCircle = "deals-cartwheel";
+        String menu= "[aria-label=\"Deals\"]";
+        String clearance = "[data-test=\"deals-clearance\"]";
+        String weeklyAd = "[data-test=\"deals-weeklyAd\"]";
+        String topDeals = "[data-test=\"deals-topDeals\"]";
+        String targetCircle = "[data-test=\"deals-cartwheel\"]";
 
         TMN.clickMenuItem(menu, clearance);
         Assert.assertTrue(driver.getCurrentUrl().contains("clearance"));
         TMN.clickMenuItem(menu, topDeals);
         Assert.assertTrue(driver.getCurrentUrl().contains("top-deals"));
-        TMN.clickMenuItem(menu, redCardE);
-        Assert.assertTrue(driver.getCurrentUrl().contains("redcard"));
         TMN.clickMenuItem(menu, targetCircle);
         Assert.assertTrue(driver.getCurrentUrl().contains("offers"));
         TMN.clickMenuItem(menu, weeklyAd);
@@ -38,17 +35,19 @@ public class TestTargetMenuNav extends BaseTest{
     }
     @Test
     public void regressionWhatsNewNav() throws InterruptedException  {
-        String menu= "trending";
+        String menu= "[aria-label=\"What’s New\"]";
 
-        int targetStyle = 0;
-        int womenArrivals = 1;
-        int beautyArrivals = 2;
-        int kidsArrivals = 3;
-        int menArrivals = 4;
-        int homeArrivals = 5;
-        int womensEmpowerment = 6;
+        int exploreWhatIsNew = 0;
+        int targetStyle = 1;
+        int womenArrivals = 2;
+        int beautyArrivals = 3;
+        int kidsArrivals = 4;
+        int menArrivals = 5;
+        int homeArrivals = 6;
         int finds = 7;
 
+        TMN.clickMenuItemWhatsNew(menu, exploreWhatIsNew);
+        Assert.assertTrue(driver.getCurrentUrl().contains("what-s-new"));
         TMN.clickMenuItemWhatsNew(menu, womenArrivals);
         Assert.assertTrue(driver.getCurrentUrl().contains("WC_GDD"));
         TMN.clickMenuItemWhatsNew(menu, kidsArrivals);
@@ -60,8 +59,7 @@ public class TestTargetMenuNav extends BaseTest{
 
         TMN.clickMenuItemWhatsNew(menu, homeArrivals);
         Assert.assertTrue(driver.getCurrentUrl().contains("home"));
-        TMN.clickMenuItemWhatsNew(menu, womensEmpowerment);
-        Assert.assertTrue(driver.getCurrentUrl().contains("WHM_GDD"));
+
         driver.get("https://www.target.com/");
         TMN.clickMenuItemWhatsNew(menu, finds);
         Assert.assertTrue(driver.getCurrentUrl().contains("TF_GDD"));
