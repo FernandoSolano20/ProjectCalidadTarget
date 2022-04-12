@@ -18,8 +18,9 @@ public class TargetLoginPage extends BasePage{
     By Input_UserName = By.id("username");
     By Input_Password =  By.id("password");
     By Button_Login = By.id("login");
-    By Spam_LogonName = By.className("styles__AccountName-sc-1kk0q5l-0");
+    By Spam_LogonName = By.className("styles__AccountLinkText-sc-17dxxwu-18");
     By Spam_Fail = By.className("AlertDisplay__AlertDisplayStyles-sc-1m3ky8a-0");
+    By skipButton =  By.cssSelector(".styles__StyledCol-sc-ct8kx6-0 .Link__StyledLink-sc-4b9qcv-0");
 
     public void navigate() throws InterruptedException{
         click(AccountBtn);
@@ -30,6 +31,15 @@ public class TargetLoginPage extends BasePage{
 
     public boolean wrongLogin(String emailAddress, String password) throws InterruptedException{
         this.navigate();
+        WebElement element = driver.findElement(Input_UserName);
+        element.sendKeys(Keys.CONTROL + "a");
+        element.sendKeys(Keys.DELETE);
+
+        WebElement elementPassword = driver.findElement(Input_Password);
+        elementPassword.sendKeys(Keys.CONTROL + "a");
+        elementPassword.sendKeys(Keys.DELETE);
+        Thread.sleep(1000);
+
         sendKeys(Input_UserName, emailAddress);
         sendKeys(Input_Password, password);
         Thread.sleep(100);
@@ -59,7 +69,7 @@ public class TargetLoginPage extends BasePage{
         Thread.sleep(8000);
         WebElement webElement = driver.findElement(Spam_LogonName);
         String userName = webElement.getText();
-        return userName.equalsIgnoreCase("Fernando");
+        return userName.equalsIgnoreCase("Hi, Fernando");
     }
 
     public void createAccount (String name, String lastName, String email, String password) throws InterruptedException{

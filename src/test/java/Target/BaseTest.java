@@ -23,6 +23,8 @@ public class BaseTest {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("start-maximized");
                 options.addArguments("incognito");
+                options.addArguments("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36");
+                options.addArguments("--disable-blink-features=AutomationControlled");
                 driver = new ChromeDriver(options);
                 break;
             case ("Edge"):

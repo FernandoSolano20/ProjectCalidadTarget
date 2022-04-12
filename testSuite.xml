@@ -7,23 +7,23 @@
         <classes>
             <class name="Target.TestTargetPasswordRecoveryPage"/>
         </classes>
-    </test>-->
+    </test>
     <test name="Login">
         <classes>
             <class name="Target.TestTargetLogin"/>
         </classes>
     </test>
-    <!--<test name="DetailPage">
+    <test name="DetailPage">
         <classes>
             <class name="Target.TestTargetDetailPage"/>
         </classes>
-    </test>
+    </test>-->
     <test name="FavoritesPage">
         <classes>
             <class name="Target.TestTargetFavoritePage"/>
         </classes>
     </test>
-    <test name="Home">
+    <!--<test name="Home">
         <classes>
             <class name="Target.TestTargetPage"/>
         </classes>

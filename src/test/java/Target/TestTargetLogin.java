@@ -15,6 +15,7 @@ public class TestTargetLogin extends BaseTest{
         driver.get(baseUrl);
     }
 
+    @Test
     public void testFakeUserLogin() throws InterruptedException {
         Assert.assertTrue(TLP.wrongLogin("fakeUser@ucenfotec.ac.cr", "error123"));
     }

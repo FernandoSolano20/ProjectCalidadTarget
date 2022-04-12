@@ -12,6 +12,7 @@ public class BasePage {
         this.driver = driver;
 
         js = (JavascriptExecutor) driver;
+        ((JavascriptExecutor)driver).executeScript("window.key = \"blahblah\";");
     }
 
     public void click(By element)
