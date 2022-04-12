@@ -22,13 +22,13 @@
         <classes>
             <class name="Target.TestTargetFavoritePage"/>
         </classes>
-    </test>-->
+    </test>
     <test name="Home">
         <classes>
             <class name="Target.TestTargetPage"/>
         </classes>
     </test>
-    <!--<test name="FindStore">
+    <test name="FindStore">
         <classes>
             <class name="Target.TestFindMyStore"/>
         </classes>
@@ -37,13 +37,13 @@
         <classes>
             <class name="Target.TestTargetShoppingCart"/>
         </classes>
-    </test>
+    </test>-->
     <test name="Categories">
         <classes>
             <class name="Target.TestTargetCategories"/>
         </classes>
     </test>
-    <test name="Navigation">
+    <!--<test name="Navigation">
         <classes>
             <class name="Target.TestTargetMenuNav"/>
         </classes>

@@ -9,9 +9,9 @@ public class TargetShoppingCart extends BasePage{
     }
 
     public void addItemToCart()throws InterruptedException {
-        By item = By.xpath("//*[@data-test=\"product-card-default\"]");
-        By addToCard = By.xpath("//*[@data-test='shipItButton']");
-        By checkout = By.xpath("//*[@data-test='addToCartModalViewCartCheckout']");
+        By item = By.cssSelector("[data-test=\"@web/ProductCard/body\"]");
+        By addToCard = By.id("addToCartButtonOrTextIdFor54566851");
+        By checkout = By.cssSelector("[href=\"/cart\"]");
         click(item);
         Thread.sleep(1000);
         click(addToCard);
@@ -21,7 +21,7 @@ public class TargetShoppingCart extends BasePage{
     }
 
     public void deleteItemFromCart() throws InterruptedException{
-        By cartMenu =  By.id("cart");
+        By cartMenu =  By.cssSelector("[data-test=\"@web/CartLink\"]");
         By cartItemDeleteBtn = By.xpath("//*[@data-test='cartItem-deleteBtn']");
         click(cartMenu);
         Thread.sleep(1000);

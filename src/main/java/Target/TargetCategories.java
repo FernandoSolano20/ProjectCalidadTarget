@@ -10,11 +10,16 @@ public class TargetCategories extends BasePage{
         super(driver);
     }
 
-    public void clickFilter(String xpath) throws InterruptedException {
-        scrollTo(By.xpath(xpath));
+    public void clickFilter(By selectorFilter, By selectorOption) throws InterruptedException {
+        scrollTo(By.cssSelector("[data-component-id=\"WEB-c_web_dvm_v01\"]"));
+        Thread.sleep(3000);
+        click(selectorFilter);
         Thread.sleep(1000);
-        click(By.xpath(xpath));
-        Thread.sleep(1000);
+        if (selectorOption != null) {
+            click(selectorOption);
+            click(By.cssSelector("[aria-label=\"Update\"]"));
+            Thread.sleep(1000);
+        }
     }
 
     public void inputSize(String size) throws InterruptedException {
@@ -24,14 +29,15 @@ public class TargetCategories extends BasePage{
     }
 
     public void clearResults() throws InterruptedException  {
-        Thread.sleep(1000);
-        String Clear = "//*[@data-test='facetSearchClearBtn']";
-        click(By.xpath(Clear));
+        String Clear = "[aria-label=\"Reset\"]";
+        click(By.cssSelector(Clear));
+        Thread.sleep(3000);
     }
 
     public String sizeResults()  {
         try {
-            return getElementText("//label[@class='h-display-block h-position-relative h-padding-a-tiny']//b"); }
+            return getElementText(By.cssSelector("[for=\"chk-56678\"] b"));
+        }
         catch (Exception exc ) {
             return "";
         }

@@ -34,4 +34,8 @@ public class BasePage {
         By element = By.xpath(xpath);
         return driver.findElement(element).getText();
     }
+
+    public String getElementText(By element) {
+        return driver.findElement(element).getText();
+    }
 }

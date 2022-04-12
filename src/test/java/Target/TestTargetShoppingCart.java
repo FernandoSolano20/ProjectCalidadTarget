@@ -23,7 +23,7 @@ public class TestTargetShoppingCart extends BaseTest{
     @Test
     public void addItemToCart()throws InterruptedException {
 
-        TLP.login("cobandol@ucenfotec.ac.cr", "Welcome!!");
+        TLP.login("testFernando@gmail.com", "Pass1234");
         Thread.sleep(1000);
         driver.get("https://www.target.com/c/home-decor-deals/-/N-vxtra");
         Thread.sleep(3000);

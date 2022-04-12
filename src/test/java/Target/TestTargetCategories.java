@@ -18,55 +18,48 @@ public class TestTargetCategories extends BaseTest{
     }
 
     public int getCurrentResults() {
-        String[] results = driver.findElement(By.xpath("//*[@data-test='numberOfSearchResults']")).getText().split(" ");
+        String[] results = driver.findElement(By.cssSelector("[data-test=\"resultsHeading\"]")).getText().split(" ");
         return Integer.parseInt(results[0]);
     }
 
 
     @Test
-    public void regressionDeliveryFilters() throws InterruptedException {
-        String outOfStocks = "//*[@for='chk-fwtfr']";
-        String pickup =  "//*[@for='checkboxOrderPickupFacet']";
-        String sameDay = "//*[@for='Check me!']";
-        String buyIt = "//*[@for='checkboxInStoreFacet']";
-        String shipping = "//*[@for='checkboxShippingFacet']";
-        By editButton = By.xpath("//*[@data-test='pickUpFiatsButton']");
+    public void regressionDeliveryFilters() throws InterruptedException  {
+        By sameDay = By.cssSelector("[data-icon-name=\"FulfillmentSameDay\"]");
+        By editButton = By.cssSelector("[data-test=\"@web/site-top-of-funnel/ProductCardWrapper\"]");
         int originalResults = getCurrentResults();
-        TC.clickFilter(outOfStocks);
-        Assert.assertTrue(originalResults <= getCurrentResults());
-        TC.clickFilter(outOfStocks);
-        Assert.assertTrue(originalResults == getCurrentResults());
-        TC.clickFilter(pickup);
-        Assert.assertTrue(originalResults >= getCurrentResults());
-        TC.clickFilter(sameDay);
-        TC.clickFilter(shipping);
-        TC.clickFilter(buyIt);
+        TC.click(sameDay);
+        Thread.sleep(3000);
         Assert.assertTrue(originalResults >= getCurrentResults());
         List<WebElement> list= driver.findElements(editButton);
         Assert.assertTrue(!list.isEmpty());
     }
     @Test
     public void regressionClothesFilters() throws InterruptedException {
-        String FitStraigth = "//*[@for='chk-dm592']";
-        String Size28x30 =  "//*[@for='chk-54ytw']";
-        String brands =  "//*[@for='chk-q4e5p']";
+        By FitStraigth = By.cssSelector(".styles__PillContainer-sc-1mpm9rk-0 [aria-label*=\"Fit\"]");
+        By FitStraigthLabel = By.cssSelector("[for=\"chk-dm592\"]");
+        By Size28x30 =  By.cssSelector(".styles__PillContainer-sc-1mpm9rk-0 [aria-label*=\"Size\"]");
+        By Size28x30Label =  By.cssSelector("[for=\"chk-54ytw\"]");
+        By brands =  By.cssSelector(".styles__PillContainer-sc-1mpm9rk-0 [aria-label*=\"Brand\"]");
+        By brandsLabel =  By.cssSelector("[for=\"chk-q643lesi29d\"]");
 
         int originalResults = getCurrentResults();
-        TC.clickFilter(FitStraigth);
+        TC.clickFilter(FitStraigth, FitStraigthLabel);
         Assert.assertTrue(originalResults >= getCurrentResults());
-        TC.clickFilter(FitStraigth);
+        TC.clickFilter(FitStraigth, FitStraigthLabel);
         Assert.assertTrue(originalResults == getCurrentResults());
-        TC.clickFilter(Size28x30);
+        TC.clickFilter(Size28x30, Size28x30Label);
         Assert.assertTrue(originalResults >= getCurrentResults());
 
+        TC.clickFilter( Size28x30, null);
         TC.inputSize("2");
         Assert.assertTrue(TC.sizeResults().equals("2"));
         TC.inputSize("200");
         Assert.assertTrue(!TC.sizeResults().equals("200"));
         TC.clearResults();
-        TC.clickFilter(brands);
+        TC.clickFilter(brands, brandsLabel);
         Assert.assertTrue(originalResults >= getCurrentResults());
-        TC.clickFilter(brands);
+        TC.clickFilter(brands, brandsLabel);
         Assert.assertTrue(originalResults >= getCurrentResults());
     }
 
