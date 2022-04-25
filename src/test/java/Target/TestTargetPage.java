@@ -32,7 +32,6 @@ public class TestTargetPage extends BaseTest{
         return driver.findElement(element).getText();
     }
 
-    @Test
     public void logoNavTest() throws InterruptedException
     {
         driver.get("https://www.target.com/c/jeans-women-s-clothing/-/N-5xtc8");
@@ -42,7 +41,6 @@ public class TestTargetPage extends BaseTest{
         Assert.assertEquals(url, "https://www.target.com/");
     }
 
-    @Test
     public void logoNavTestOnHome() throws InterruptedException
     {
         String baseUrl = "https://www.target.com/";
@@ -51,7 +49,6 @@ public class TestTargetPage extends BaseTest{
         Assert.assertEquals(url, baseUrl);
     }
 
-    @Test
     public void invalidZipCode() throws InterruptedException
     {
         THP.searchLocation("00000000000");
@@ -59,7 +56,6 @@ public class TestTargetPage extends BaseTest{
         String errorMessage = driver.findElement(errorBox).getText();
         Assert.assertEquals(errorMessage.toLowerCase(), "please enter a valid location");
     }
-    @Test
     public void searchLocationByValidZip() throws InterruptedException
     {
         By item = By.cssSelector("[data-test=\"@web/StoreSearchBlockContainer/StoresList-2083\"] h4");
@@ -68,7 +64,6 @@ public class TestTargetPage extends BaseTest{
         Assert.assertEquals(itemTitle.toLowerCase(), "yuma");
     }
 
-    @Test
     public void regressionSearchStores()  throws InterruptedException {
         By selectedStore = By.cssSelector("[data-test=\"@web/StoreMessage/StoreName\"] .styles__StyledMessage-sc-1ghv6mc-5");
         String firstStore;

@@ -73,7 +73,7 @@ public class TargetLoginPage extends BasePage{
     }
 
     public void createAccount (String name, String lastName, String email, String password) throws InterruptedException{
-        By CreateAccountBtn = By.cssSelector("a[href=\"/account\"][data-test=\"accountNav-createAccount\"]");
+        By CreateAccountBtn = By.cssSelector("#createAccount");
         By Input_FirstName = By.id("firstname");
         By Input_LastName =  By.id("lastname");
         this.navigate();

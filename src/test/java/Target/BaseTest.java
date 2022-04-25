@@ -20,6 +20,7 @@ public class BaseTest {
     {
         switch(browser) {
             case ("Chrome"):
+                System.setProperty("webdriver.chrome.driver","C:\\Users\\fersolano\\Documents\\Universidad\\Calidad, verificación y validación de software\\Proyecto\\Project Jose\\chromedriver.exe");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("start-maximized");
                 options.addArguments("incognito");
@@ -27,12 +28,6 @@ public class BaseTest {
                 options.addArguments("--disable-blink-features=AutomationControlled");
                 driver = new ChromeDriver(options);
                 break;
-            case ("Edge"):
-                System.setProperty("webdriver.edge.driver","C:\\Users\\ExtremeTech\\IdeaProjects\\WebDriver_Basics\\msedgedriver.exe");
-                driver = new EdgeDriver();
-                driver.manage().window().maximize();
-                break;
-
         }
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.get(url);

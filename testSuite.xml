@@ -3,12 +3,12 @@
 <suite name="Suite">
     <parameter name="Browser" value="Chrome" />
     <parameter name="URL" value="https://www.target.com/"/>
-    <!-- <test name="PasswordRecovery">
+    <test name="PasswordRecovery">
         <classes>
             <class name="Target.TestTargetPasswordRecoveryPage"/>
         </classes>
     </test>
-    <test name="Login">
+    <!--<test name="Login">
         <classes>
             <class name="Target.TestTargetLogin"/>
         </classes>
@@ -22,23 +22,23 @@
         <classes>
             <class name="Target.TestTargetFavoritePage"/>
         </classes>
-    </test>
+    </test>-->
     <test name="Home">
         <classes>
             <class name="Target.TestTargetPage"/>
         </classes>
     </test>
-    <test name="FindStore">
+    <!--<test name="FindStore">
         <classes>
             <class name="Target.TestFindMyStore"/>
         </classes>
-    </test>
+    </test>-->
     <test name="ShoppingCard">
         <classes>
             <class name="Target.TestTargetShoppingCart"/>
         </classes>
     </test>
-    <test name="Categories">
+    <!--<test name="Categories">
         <classes>
             <class name="Target.TestTargetCategories"/>
         </classes>

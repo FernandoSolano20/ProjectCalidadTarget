@@ -27,7 +27,7 @@ public class TestTargetLogin extends BaseTest{
 
     public void createAccountWithUsedEmail ()  throws InterruptedException {
         By errorMessageDiv = By.xpath("//*[@data-test='authAlertDisplay']");
-        TLP.createAccount("Adrian", "Obando", "cobandol@ucenfotec.ac.cr", "Pass1234");
+        TLP.createAccount("Fernando", "Solano", "testFernando@gmail.com", "Pass1234");
         String errorMessage = driver.findElement(errorMessageDiv).getText();
         Assert.assertEquals(errorMessage, "That Target.com account already exists. You can Sign In or reset your password.");
 
